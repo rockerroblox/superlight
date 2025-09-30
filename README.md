@@ -31,3 +31,4 @@ This is slightly annoying because you can search for something completely innocu
 # Extended Metaphor - CVE-LSE-2025-02
 
 Coming soon...
+(weird name I know its a work in progress)
