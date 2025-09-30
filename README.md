@@ -38,3 +38,56 @@ This is slightly annoying because you can search for something completely innocu
 
 Coming soon...
 (weird name I know its a work in progress)
+
+
+# Dynamic Murderer - CVE-LSE-2025-02
+
+So we kill both DNS and the websocket requests and essentially completely remove any contact to lightspeed so now there is radio silence.
+
+Lightspeed source code is extremely badly made. It exposes secret keys, logins, links, etc. Even GitHub scans and finds the secrets. So here are the DNS links you can block with the program, coming soon.
+
+```"lsrelay-config-production.s3.amazonaws.com".toLowerCase(),
+                    "lsrelay-extensions-production.s3.amazonaws.com".toLowerCase(),
+                    "devices.filter.relay.school".toLowerCase(),
+                    "production-gc.lsfilter.com".toLowerCase(),
+                    "lightspeedsystems.app",
+                    "stagingls.io",
+                    "developmentls.io",
+                    "lsrelayaccess.com",
+                    "lsurl.me",
+                    "lsmdm-production.s3.amazonaws.com",
+                    "devices.lsclassroom.com",
+                    "lsorchestration-production.amazonaws.com",
+                    "lsaccess.me",
+                    "www.googleapis.com",
+                    "ajax.googleapis.com",
+                    "googleapis.com",
+                    "fonts.googleapis.com",
+                    "login.i-ready.com",
+                    "gm4nyg31l2.execute-api.us-west-2.amazonaws.com",
+                    "5rw61tcrl5.execute-api.us-west-2.amazonaws.com",
+                    "wsmfcvajyf.execute-api.us-west-1.amazonaws.com",
+                    "development.lsclassroom.com",
+                    "staging-preview.lsclassroom.com",
+                    "preview.lsclassroom.com",
+                    "hosted186.renlearn.com",
+                    "z40.renlearn.com",
+                    "z40.renlearnrp.com",
+                    "z46.renlearn.com",
+                    "z46.renlearnrp.com",
+                    "hosted298.renlearn.com",
+                    "realtime.ably.io",
+                    "z05.renlearn.com",
+                    "z05.renlearnrp.com",
+                    "hosted88.renlearn.com",
+                    "gce-beacons.gcp.gvt2.com",
+                    "gce-beacons.gcp.gvt3.com",
+                    "rest.ably.io",
+                    "lightspeed-realtime.ably.io",
+                    "a-fallback-lightspeed.ably.io",
+                    "b-fallback-lightspeed.ably.io",
+                    "c-fallback-lightspeed.ably.io",
+                    "staging-bp-01.lsfilter.com"
+```
+
+***Remember to go through and check each link!!!! Some are essential Google endpoints!!***
