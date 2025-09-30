@@ -5,8 +5,8 @@
           |_|                  |___/
 ```
 
-[!NOTE]
-AWS vulnerabilities through Lightspeed themselves coming soon: CVE-LSE-2025-03 - DBCheck
+> [!NOTE]
+> AWS vulnerabilities through Lightspeed themselves coming soon: CVE-LSE-2025-03 - DBCheck
 
 Superlight is a framework to remove Lightspeed Filter Agent through various methods. Methods include:
 
