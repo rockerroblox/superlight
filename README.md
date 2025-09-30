@@ -8,6 +8,9 @@
 > [!NOTE]
 > AWS vulnerabilities through Lightspeed themselves coming soon: CVE-LSE-2025-03 - DBCheck
 
+> [!IMPORTANT]
+> New method! CVE-LSE-2025-04 - Dynamic Murderer
+
 Superlight is a framework to remove Lightspeed Filter Agent through various methods. Methods include:
 
     • Extension removal
