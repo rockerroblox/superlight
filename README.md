@@ -6,7 +6,9 @@
 ```
 
 > [!NOTE]
-> AWS vulnerabilities through Lightspeed themselves coming soon: CVE-LSE-2025-03 - DBCheck
+> New bypass methods and Impero Bypasser coming soon, SUPERLIGHT 2
+
+We also have MSIX bundled roblox
 
 > [!IMPORTANT]
 > New method! CVE-LSE-2025-04 - Dynamic Murderer
