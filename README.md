@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">Superlight</h1>
-<p align="center"><b></b>A school filter bypass framework</b></b></p>
+<p align="center"><b>A school filter bypass framework</b></p>
 
 <p align="center">
   <img src="https://badgen.net/badge/icon/windows?icon=windows&label" alt="Windows">
