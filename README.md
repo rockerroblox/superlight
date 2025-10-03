@@ -53,7 +53,7 @@ Unfortunately, at this current moment it is unlikely for me to attain a Windows 
 
 ```
 
-|____ **SafeRE**
+|____ SafeRE
 |---- RunAsInvoker
 |____ MSIX
 |____ Live OS
