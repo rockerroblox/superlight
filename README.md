@@ -5,7 +5,7 @@
           |_|                  |___/
 ```
 
-<<p align="center">
+<p align="center">
   <img src="https://badgen.net/badge/icon/windows?icon=windows&label" alt="Windows">
   <img src="https://badgen.net/static/license/GPL-3.0/blue" alt="GPL-3.0 License">
   <img src="https://badgen.net/static/Superlight/1.0/cyan" alt="Superlight 1.0">
