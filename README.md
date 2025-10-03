@@ -8,7 +8,8 @@
 <p align="center"><b>A school filter bypass framework</b></p>
 <br>
 <p align="center">
-   <a href="https://github.com/rockerroblox/superlight/README.md#Exploit List" align="center">Exploit List</a><p>•</p>
+   <a href="https://github.com/rockerroblox/superlight/README.md#Exploit List" align="center">Exploit List</a>
+   <p>•</p>
 </p>
 
 
