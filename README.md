@@ -10,12 +10,13 @@
 </p>
 
 <p>
-          <img src="https://badgen.net/static/Superlight/1.0/cyan" style="float: left; margin: 0 15px 15px 0;">
+          <img align="left" src="https://badgen.net/static/Superlight/1.0/cyan">
 </p>
 
 <p>
-          <img src="https://badgen.net/badge/icon/windows?icon=windows&label" style="float: right; margin: 0 0 15px 15px;">
+          <img align="right" src="https://badgen.net/badge/icon/windows?icon=windows&label">
 </p>
+
 > [!NOTE]
 > New bypass methods and Impero Bypasser coming soon, SUPERLIGHT 2
 
