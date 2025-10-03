@@ -2,9 +2,9 @@
 
 ## All
 
-Port 50142 - WPSIMP01
+Port 50142 - IMP01
 
-Port 30016 - WPSIMP01 Service
+Port 30016 - IMP01 Service
 
 Port 3455 - Lightspeed Relay Loopback
 
@@ -115,9 +115,9 @@ Port 30016 - Impero
 
 Port 64001 - Impero
 
-Port 50142 - WPSIMP01
+Port 50142 - IMP01
 
-Port 30016 - WPSIMP01 Service
+Port 30016 - IMP01 Service
 
 # DNS
 
