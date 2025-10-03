@@ -7,7 +7,7 @@
 <h1 align="center">Superlight</h1>
 <p align="center"><b>A school filter bypass framework</b></p>
 <br>
-<a href="https://github.com/rockerroblox/superlight/README.md#Exploit List" align="center" "Exploit List"></a><p align="center">•</p>
+<a href="https://github.com/rockerroblox/superlight/README.md#Exploit List" align="center" Exploit List></a><p align="center">•</p>
 
 <p align="center">
   <img src="https://badgen.net/badge/icon/windows?icon=windows&label" alt="Windows">
