@@ -6,6 +6,8 @@
 
 <h1 align="center">Superlight</h1>
 <p align="center"><b>A school filter bypass framework</b></p>
+<br>
+<a href="https://github.com/rockerroblox/superlight/README.md#Exploit List" align="center" "Exploit List"></a><p align="center">•</p>
 
 <p align="center">
   <img src="https://badgen.net/badge/icon/windows?icon=windows&label" alt="Windows">
@@ -40,16 +42,19 @@ LSE-2025-02 - Superlight 2 - Decompilation Exploits (TBD)
 
 Unfortunately, at this current moment it is unlikely for me to attain a Windows virtual machine to decompile the Filter Agent.
 
-# PSW - CVE-LSE-2025-01
+
+# Exploit List
+
+## PSW - CVE-LSE-2025-01
 
 **PSW - Python Socket Worker** is an exploit for Lightspeed Filter Agent and **Lightspeed Alert Agent**, although primarily used for Alert Agent. It works by killing Lightspeed websocket connections and occupies ports.
 It is the predecessor to OSN and is simply not worth using anymore.
 
-# NPB - CVE-LSE-2025-02 (Severity: Low)
+## NPB - CVE-LSE-2025-02 (Severity: Low)
 NPB - Non-Administrator Panic Button - is quite simply a panic button which shuts off your internet, turns your PC into aeroplane mode, clears your history, and your cache, blocks Lightspeed filter ports and then you can re-enable things with a button press in the GUI.
 
 
-# OSN - CVE-LSE-2025-02
+## OSN - CVE-LSE-2025-02
 
 OSN - Obvious Self-Performing DNS Blocker
 
