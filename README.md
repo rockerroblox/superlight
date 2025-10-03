@@ -9,7 +9,8 @@
 <br>
 <p align="center">
    <a href="https://github.com/rockerroblox/superlight/README.md#Exploit List" align="center">Exploit List</a>
-   <p>•</p>
+   <a href="https://github.com/rockerroblox/superlight/README.md#Instructions" align="center">Instructions</a>
+   
 </p>
 
 
@@ -29,7 +30,7 @@
 ```
 
 
-
+# Description
 
 **Superlight** is an exploit framework for school filtering programs, such as Lightspeed Alert Agent, Filter Agent, and Impero Classroom. Current **features:**
 
@@ -46,6 +47,49 @@ LSE-2025-02 - Superlight 2 - Decompilation Exploits (TBD)
 
 Unfortunately, at this current moment it is unlikely for me to attain a Windows virtual machine to decompile the Filter Agent.
 
+***
+
+# Instructions
+
+|____ **SafeRE**
+|---- RunAsInvoker
+|____ MSIX
+|____ Live OS
+
+## SafeRE (reccommended)
+
+**SafeRE** is a method to install apps and change files in Windows Recovery Mode (rip BitLocker users 🥀🥀).
+
+Boot into WinRE by holding shift and clicking the restart button. Click *Troubleshoot* - *Command Prompt*
+
+Now there are a couple things you can do, you can edit files with the notepad or *load hives through regedit.*
+
+You can then use **net user youruser password /add** and then **net localgroup administrators /add youruser**
+
+Then login and run your script, but this is dangerous and you may get caught. If you do this, maybe consider the MSIX option.
+
+## RunAsInvoker
+
+Simple, use the included batch file to run without elevation.
+
+## MSIX
+
+This is one of the easiest options for the user, but hard as hell for me. First of all, you need to use the MSIX Packaging Tool to package the EXE file. Then you need a self-signed certificate that verifies, with a password and a timestamp,\
+And 95% of the time it dosen't work. All you need to do is download the MSIX, add my certificate to your Trusted Root Certification Authorities and click Install.
+
+There are 2 MSIX apps:
+   • SUPERLIGHT client
+   • Your bundled app
+
+The SUPERLIGHT client is a coming-soon app that allows you to essentially sideload apps through it, play unblocked games, download MS Store apps and games, run exploits, update the client and much more.
+
+Your bundled app is just, your bundled app.
+
+If you want ways to achieve administrator to add the certificate, I'll add those guides later, but consider checking out the Titanium Network Discord for their Kajigs.
+
+## Live OS
+
+Get a USB drive, and install Rufus or Ventoy. Install a live OS Linux distro and use: **chntpw** to add admin users, or use the **Utilman** method.
 
 # Exploit List
 
