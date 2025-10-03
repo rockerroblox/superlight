@@ -4,7 +4,7 @@
    <br>
 </p>
 
-<h2>Superlight</h2><br>
+<h1 align="center">Superlight</h1>
 <p align="center">A school filter bypass framework</p>
 
 ---
