@@ -9,11 +9,11 @@
           <img src="https://badgen.net/static/license/GPL-3.0/blue">
 </p>
 
-<p align="top-left">
+<p>
           <img src="https://badgen.net/static/Superlight/1.0/cyan" style="float: left; margin: 0 15px 15px 0;">
 </p>
 
-<p align="top-right">
+<p>
           <img src="https://badgen.net/badge/icon/windows?icon=windows&label" style="float: right; margin: 0 0 15px 15px;">
 </p>
 > [!NOTE]
