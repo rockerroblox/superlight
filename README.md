@@ -5,7 +5,13 @@
 </p>
 
 <h1 align="center">Superlight</h1>
-<p align="center">A school filter bypass framework</p>
+<p align="center">**A school filter bypass framework**</p>
+
+<p align="center">
+  <img src="https://badgen.net/badge/icon/windows?icon=windows&label" alt="Windows">
+  <img src="https://badgen.net/static/license/GPL-3.0/blue" alt="GPL-3.0 License">
+  <img src="https://badgen.net/static/Superlight/1.0/cyan" alt="Superlight 1.0">
+</p>
 
 ---
 
@@ -16,11 +22,7 @@
           |_|                  |___/
 ```
 
-<p align="center">
-  <img src="https://badgen.net/badge/icon/windows?icon=windows&label" alt="Windows">
-  <img src="https://badgen.net/static/license/GPL-3.0/blue" alt="GPL-3.0 License">
-  <img src="https://badgen.net/static/Superlight/1.0/cyan" alt="Superlight 1.0">
-</p>
+
 
 
 **Superlight** is an exploit framework for school filtering programs, such as Lightspeed Alert Agent, Filter Agent, and Impero Classroom. Current **features:**
