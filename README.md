@@ -4,7 +4,18 @@
 |___/\__,_| .__/ \___|_|  |_|_|\__, |_| |_|\__|
           |_|                  |___/
 ```
-![Badge](https://badgen.net/static/Superlight/1.0/cyan)![Badge](https://badgen.net/static/license/GPL-3.0/blue)![Badge](https://badgen.net/badge/icon/windows?icon=windows&label)
+
+<p align="center">
+          <img src="https://badgen.net/static/license/GPL-3.0/blue">
+</p>
+
+<p align="left">
+          <img src="https://badgen.net/static/Superlight/1.0/cyan">
+</p>
+
+<p align="right">
+          <img src="https://badgen.net/badge/icon/windows?icon=windows&label">
+</p>
 > [!NOTE]
 > New bypass methods and Impero Bypasser coming soon, SUPERLIGHT 2
 
