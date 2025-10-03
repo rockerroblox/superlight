@@ -52,4 +52,3 @@ OSN - Obvious Self-Performing DNS Blocker
 Lightspeed code exposes a lot of sensitive info, such as secret keys, tokens, access keys, links, ports, filter lists, etc.
 
 
-***Remember to go through and check each link!!!! Some are essential Google endpoints!!***
