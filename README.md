@@ -42,9 +42,12 @@ Coming soon...
 (weird name I know its a work in progress)
 
 
-# Dynamic Murderer - CVE-LSE-2025-02
+# OSN - CVE-LSE-2025-02
 
-So we kill both DNS and the websocket requests and essentially completely remove any contact to lightspeed so now there is radio silence.
+OSN - Obvious Self-Extracting DNS Blocker
+
+
+OSN kills both DNS and the websocket requests and essentially completely remove any contact to lightspeed so now there is radio silence.
 
 Lightspeed source code is extremely badly made. It exposes secret keys, logins, links, etc. Even GitHub scans and finds the secrets. So here are the DNS links you can block with the program, coming soon.
 
