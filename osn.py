@@ -5,7 +5,7 @@ import socketserver
 from dnspython import dns
 
 
-IMPERO_TARGET_PORTS = [55282, 30016, 64001, 50142]
+IMPERO_TARGET_PORTS = [55282, 30016, 64001, 50142, 30015]
 LIGHTSPEED_TARGET_PORTS = [3455, 3456, 6544, 62312, 49669, 56909, 59172, 59173, 59174]
 ALL_PORTS = [55282, 30016, 64001, 50142, 3455, 3456, 6544, 62312, 49669, 56909, 59172, 59173, 59174]
 
@@ -97,4 +97,5 @@ HOST, PORT = "127.0.0.1", 5353
 server = socketserver.UDPSerer((HOST, PORT), WebBlock)
 print(f"Running")
 server.serve_forever()
+
 
