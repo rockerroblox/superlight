@@ -118,6 +118,7 @@ Port 64001 - Impero
 Port 50142 - IMP01
 
 Port 30016 - IMP01 Service
+`imperosoftware.com` - Impero Callback
 
 # DNS
 
