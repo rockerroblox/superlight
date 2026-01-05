@@ -46,7 +46,8 @@ BLOCKLIST = [
                     "a-fallback-lightspeed.ably.io",
                     "b-fallback-lightspeed.ably.io",
                     "c-fallback-lightspeed.ably.io",
-                    "staging-bp-01.lsfilter.com"
+                    "staging-bp-01.lsfilter.com",
+                    "imperosoftware.com"
 ]
 class WebSocket:
     def occupy(port, host='localhost'):
@@ -96,3 +97,4 @@ HOST, PORT = "127.0.0.1", 5353
 server = socketserver.UDPSerer((HOST, PORT), WebBlock)
 print(f"Running")
 server.serve_forever()
+
