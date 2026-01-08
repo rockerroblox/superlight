@@ -94,8 +94,9 @@ class WebBlock(socketserver.BaseRequestHandler):
         return False
 
 HOST, PORT = "127.0.0.1", 5353
-server = socketserver.UDPSerer((HOST, PORT), WebBlock)
+server = socketserver.UDPServer((HOST, PORT), WebBlock)
 print(f"Running")
 server.serve_forever()
+
 
 
