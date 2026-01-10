@@ -1,5 +1,7 @@
 import socket
 import os
+import dns,dns.message,dns.query,dns.rcode
+from dns import *
 import threading
 import socketserver
 from dnspython import dns
@@ -12,8 +14,8 @@ ALL_PORTS = [55282, 30016, 64001, 50142, 3455, 3456, 6544, 62312, 49669, 56909, 
 BLOCKLIST = [
     
                     "lsrelay-extensions-production.s3.amazonaws.com"
-                    "devices.filter.relay.school"
-                    "production-gc.lsfilter.com"
+                    "devices.filter.relay.school",
+                    "production-gc.lsfilter.com",
                     "lightspeedsystems.app",
                     "stagingls.io",
                     "developmentls.io",
@@ -49,6 +51,23 @@ BLOCKLIST = [
                     "staging-bp-01.lsfilter.com",
                     "imperosoftware.com"
 ]
+
+def test_block(BLOCKLIST):
+    to_test = BLOCKLIST[0]
+    query = dns.message.make_query(to_test, dns.rdatatype.A)
+    try:
+        response = dns.query.udp(query, "127.0.0.1", port=5353, timeout=2)
+        if response.rcode() == dns.rcode.NXDOMAIN:
+            print(f"Success blocking {to_test}")
+        else:
+            print(f"Failure blocking {to_test}, returning code {response.rcode()}")
+            print("Retrying WebBlock...")
+            HOST, PORT = "127.0.0.1", 5353
+            server = socketserver.UDPServer((HOST, PORT), WebBlock)
+            print(f"Running")
+            server.serve_forever()
+
+
 class WebSocket:
     def occupy(port, host='localhost'):
         try:
@@ -97,6 +116,9 @@ HOST, PORT = "127.0.0.1", 5353
 server = socketserver.UDPServer((HOST, PORT), WebBlock)
 print(f"Running")
 server.serve_forever()
+print("Testing connection to services...")
+test_block(BLOCKLIST)
+
 
 
 
