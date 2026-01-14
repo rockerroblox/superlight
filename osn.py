@@ -66,7 +66,8 @@ def test_block(BLOCKLIST):
             server = socketserver.UDPServer((HOST, PORT), WebBlock)
             print(f"Running")
             server.serve_forever()
-
+    except Exception as e:
+        print(f"DNS test failed.")
 
 class WebSocket:
     def occupy(port, host='localhost'):
@@ -118,6 +119,7 @@ print(f"Running")
 server.serve_forever()
 print("Testing connection to services...")
 test_block(BLOCKLIST)
+
 
 
 
