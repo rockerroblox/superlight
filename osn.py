@@ -1,19 +1,18 @@
 import socket
 import os
-import dns,dns.message,dns.query,dns.rcode
-from dns import *
 import threading
 import socketserver
-from dnspython import dns
 
+import dns.message
+import dns.query
+import dns.rcode
 
 IMPERO_TARGET_PORTS = [55282, 30016, 64001, 50142, 30015]
 LIGHTSPEED_TARGET_PORTS = [3455, 3456, 6544, 62312, 49669, 56909, 59172, 59173, 59174]
 ALL_PORTS = [55282, 30016, 64001, 50142, 3455, 3456, 6544, 62312, 49669, 56909, 59172, 59173, 59174]
 
 BLOCKLIST = [
-    
-                    "lsrelay-extensions-production.s3.amazonaws.com"
+                    "lsrelay-extensions-production.s3.amazonaws.com",
                     "devices.filter.relay.school",
                     "production-gc.lsfilter.com",
                     "lightspeedsystems.app",
@@ -119,6 +118,7 @@ print(f"Running")
 server.serve_forever()
 print("Testing connection to services...")
 test_block(BLOCKLIST)
+
 
 
 
