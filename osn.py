@@ -1,19 +1,18 @@
 import socket
 import os
-import dns,dns.message,dns.query,dns.rcode
-from dns import *
 import threading
 import socketserver
-from dnspython import dns
 
+import dns.message
+import dns.query
+import dns.rcode
 
 IMPERO_TARGET_PORTS = [55282, 30016, 64001, 50142, 30015]
 LIGHTSPEED_TARGET_PORTS = [3455, 3456, 6544, 62312, 49669, 56909, 59172, 59173, 59174]
 ALL_PORTS = [55282, 30016, 64001, 50142, 3455, 3456, 6544, 62312, 49669, 56909, 59172, 59173, 59174]
 
 BLOCKLIST = [
-    
-                    "lsrelay-extensions-production.s3.amazonaws.com"
+                    "lsrelay-extensions-production.s3.amazonaws.com",
                     "devices.filter.relay.school",
                     "production-gc.lsfilter.com",
                     "lightspeedsystems.app",
@@ -53,6 +52,14 @@ BLOCKLIST = [
 ]
 
 def test_block(BLOCKLIST):
+    """
+    Checks whether the first domain in BLOCKLIST is blocked by the local DNS service and starts the WebBlock UDP server if it is not.
+    
+    Sends a DNS A query for BLOCKLIST[0] to 127.0.0.1:5353 and prints the test result. If the response is not NXDOMAIN, attempts to start a UDP WebBlock server bound to 127.0.0.1:5353. On any exception, prints "DNS test failed.".
+    
+    Parameters:
+        BLOCKLIST (list[str]): A list of domain names; the first entry is used as the test target.
+    """
     to_test = BLOCKLIST[0]
     query = dns.message.make_query(to_test, dns.rdatatype.A)
     try:
@@ -66,10 +73,20 @@ def test_block(BLOCKLIST):
             server = socketserver.UDPServer((HOST, PORT), WebBlock)
             print(f"Running")
             server.serve_forever()
-
+    except Exception as e:
+        print(f"DNS test failed.")
 
 class WebSocket:
     def occupy(port, host='localhost'):
+        """
+        Bind to and hold a TCP port to prevent other processes from using it.
+        
+        This function binds a TCP socket to (host, port), begins listening, prints that the port is occupied, and then runs an infinite loop accepting and immediately closing incoming connections. It blocks the calling thread until an exception occurs, at which point it prints an error message.
+        
+        Parameters:
+            port (int): TCP port number to bind.
+            host (str): Host/IP to bind to. Defaults to 'localhost'.
+        """
         try:
             blocker = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             blocker.bind((host, port))
@@ -118,6 +135,7 @@ print(f"Running")
 server.serve_forever()
 print("Testing connection to services...")
 test_block(BLOCKLIST)
+
 
 
 
