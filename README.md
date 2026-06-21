@@ -29,6 +29,8 @@
           |_|                  |___/
 ```
 
+> [!IMPORTANT]  
+> Superlight does not work! It requires admin in which it would be useless otherwise. Just use YellowKey and get admin.
 
 # Description
 
